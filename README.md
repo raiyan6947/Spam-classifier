@@ -5,6 +5,7 @@ This is a simple machine learning project that classifies SMS messages as spam o
 The goal of this project was to understand how text data can be converted into numerical features and used to train a real classification model.
 
 ## Project Overview
+
 Spam messages are a common problem in communication systems. In this project, I built a basic spam detection model using:
 
 TF-IDF Vectorization for text feature extraction 
@@ -16,7 +17,7 @@ Scikit-learn for model training and evaluation
 Joblib for saving and loading trained models
 The model is trained on a publicly available SMS dataset and achieves high accuracy on unseen test data.
 
-## How It Works
+## How It Works:
 
 Dataset Loading
 
@@ -53,7 +54,7 @@ Output:
 
 spam
 
-🛠 Technologies Used:
+## Technologies Used:
 
 Python
 Pandas

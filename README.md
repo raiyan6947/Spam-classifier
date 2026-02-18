@@ -5,20 +5,20 @@ This project implements a machine learning model that classifies SMS messages as
 
 The model is trained on a real-world SMS dataset containing more than 5,000 labeled messages.
 
----
+
 
 ## Problem Statement
 Spam messages are a major issue in digital communication.  
 The objective of this project is to build a machine learning model that can automatically detect whether a message is spam or legitimate.
 
----
+
 
 ## Dataset
 - SMS Spam Collection Dataset  
 - Approximately 5,500 labeled messages  
 - Two categories: `spam` and `ham`
 
----
+
 
 ## Technologies Used
 - Python
@@ -27,7 +27,7 @@ The objective of this project is to build a machine learning model that can auto
 - TF-IDF Vectorizer
 - Multinomial Naive Bayes
 
----
+
 
 ## Model Workflow
 1. Load dataset  
@@ -37,7 +37,7 @@ The objective of this project is to build a machine learning model that can auto
 5. Evaluate model performance  
 6. Predict new messages  
 
----
+
 
 ## Model Performance
 Accuracy: 95–98% (may vary depending on train-test split)
@@ -47,7 +47,7 @@ Example:
 Input: "Claim your free lottery prize now!"  
 Prediction: Spam  
 
----
+
 
 ## How to Run
 
@@ -57,13 +57,13 @@ pip install pandas scikit-learn
 ### Run the Script
 python spam_classifier.py
 
----
+
 
 ## Project Structure
 
-Spam-Classifier/ │ ├── spam_classifier.py ├── README.md
+Spam-Classifier, spam_classifier.py, README.md
 
----
+
 
 ## Future Improvements
 
@@ -73,7 +73,7 @@ Spam-Classifier/ │ ├── spam_classifier.py ├── README.md
 - Deploy as a web application using Flask
 - Add a simple user interface
 
----
+
 
 ## Author
 

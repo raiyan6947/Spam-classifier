@@ -1,80 +1,96 @@
-# Spam Message Classifier (Naive Bayes + TF-IDF)
+SMS Spam Classifier (Machine Learning Project)
 
-## Overview
-This project implements a machine learning model that classifies SMS messages as **Spam** or **Ham (Not Spam)** using TF-IDF vectorization and the Multinomial Naive Bayes algorithm.
+This is a simple machine learning project that classifies SMS messages as spam or ham (not spam) using Natural Language Processing (NLP) techniques.
 
-The model is trained on a real-world SMS dataset containing more than 5,000 labeled messages.
+The goal of this project was to understand how text data can be converted into numerical features and used to train a real classification model.
 
+## Project Overview
+Spam messages are a common problem in communication systems. In this project, I built a basic spam detection model using:
 
+TF-IDF Vectorization for text feature extraction 
 
-## Problem Statement
-Spam messages are a major issue in digital communication.  
-The objective of this project is to build a machine learning model that can automatically detect whether a message is spam or legitimate.
+Multinomial Naive Bayes for classification
 
+Scikit-learn for model training and evaluation
 
+Joblib for saving and loading trained models
+The model is trained on a publicly available SMS dataset and achieves high accuracy on unseen test data.
 
-## Dataset
-- SMS Spam Collection Dataset  
-- Approximately 5,500 labeled messages  
-- Two categories: `spam` and `ham`
+## How It Works
 
+Dataset Loading
 
+The SMS dataset is loaded from an online source and contains labeled messages (spam or ham).
 
-## Technologies Used
-- Python
-- Pandas
-- Scikit-learn
-- TF-IDF Vectorizer
-- Multinomial Naive Bayes
+Text Preprocessing & Vectorization
 
+Text is converted to lowercase
+English stopwords are removed
 
+Messages are transformed into numerical vectors using TF-IDF 
 
-## Model Workflow
-1. Load dataset  
-2. Convert text into numerical features using TF-IDF  
-3. Split dataset into training and testing sets  
-4. Train Multinomial Naive Bayes classifier  
-5. Evaluate model performance  
-6. Predict new messages  
+Model Training:
 
+The dataset is split into training and testing sets
 
+A Multinomial Naive Bayes classifier is trained
 
-## Model Performance
-Accuracy: 95–98% (may vary depending on train-test split)
+Labels are encoded using LabelEncoder
+Model Saving
 
-Example:
+The trained model, label encoder, and vectorizer are saved as .pkl files for reuse.
+Prediction
 
-Input: "Claim your free lottery prize now!"  
-Prediction: Spam  
+You can input a new message, and the model will predict whether it is spam or not.
 
+## Example
 
+Input:
 
-## How to Run
+"Claim your free lottery prize now!"
 
-Install required libraries:
-pip install pandas scikit-learn
+Output:
 
-### Run the Script
-python spam_classifier.py
+spam
 
+🛠 Technologies Used:
 
-
-## Project Structure
-
-Spam-Classifier, spam_classifier.py, README.md
+Python
+Pandas
+Scikit-learn
+Joblib
 
 
+## Files Generated:
 
-## Future Improvements
+After training, the following files are saved:
 
-- Compare with Logistic Regression
-- Add advanced preprocessing (stemming, lemmatization)
-- Save and load trained model using joblib
-- Deploy as a web application using Flask
-- Add a simple user interface
+spam_classifier_model.pkl → Trained model
 
+label_encoder.pkl → Encoded labels
 
+tfidf_vectorizer.pkl → TF-IDF vectorizer
 
-## Author
+These files allow the model to be reused without retraining.
 
-Developed as a machine learning mini-project for text classification practice.
+## What I Learned:
+
+How text data is converted into numerical features
+
+How Naive Bayes works for text classification
+
+How to save and reuse trained ML models
+
+Structuring a simple ML project in Python
+
+## Future Improvements:
+
+Add a simple web interface (Flask or Streamlit)
+
+Improve preprocessing (stemming, lemmatization)
+
+Try different models (Logistic Regression, SVM)
+
+Deploy the model online
+
+## This project is part of my journey into machine learning and practical NLP applications.

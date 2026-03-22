@@ -1,4 +1,4 @@
-SMS Spam Classifier (Machine Learning Project)
+## SMS Spam Classifier (Machine Learning Project)
 
 This is a simple machine learning project that classifies SMS messages as spam or ham (not spam) using Natural Language Processing (NLP) techniques.
 

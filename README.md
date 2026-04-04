@@ -30,7 +30,7 @@ English stopwords are removed
 
 Messages are transformed into numerical vectors using TF-IDF 
 
-Model Training:
+# Model Training:
 
 The dataset is split into training and testing sets
 
@@ -56,10 +56,7 @@ spam
 
 ## Technologies Used:
 
-Python
-Pandas
-Scikit-learn
-Joblib
+Python,Pandas, Scikit-learn, Joblib
 
 
 ## Files Generated:
